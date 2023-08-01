@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolJin Project</title>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/all.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div
+        class="position-absolute app-navigation w-100 px-2 d-flex align-items-center"
+      >
+        <img src="images/tanner_logo_header.png" class="app-logo" />
+        <ul class="nav app-navbar">
+          <li><a href="">navy salt</a></li>
+          <li><a href="">voyager</a></li>
+          <li><a href="">drifter</a></li>
+          <li><a href="">collection</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+      </div>
+      <!-- Slider -->
+      <div class="carousel-container justify-content-center">
+        <div
+          id="vertical-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="false"
+          data-bs-wrap="false"
+        >
+          <!-- Carousel buttons -->
+          <div
+            class="position-absolute d-flex flex-column px-5 carousel-button-container"
+          >
+            <button
+              class="carousel-control-prev carousel-control-prev-icon"
+              data-bs-target="#vertical-carousel"
+              data-bs-slide="prev"
+              type="button"
+            >
+              <i class="fas fa-chevron-up fa-lg"></i>
+            </button>
+            <button
+              class="carousel-control-next carousel-control-next-icon"
+              data-bs-target="#vertical-carousel"
+              data-bs-slide="next"
+              type="button"
+            >
+              <i class="fas fa-chevron-down fa-lg"></i>
+            </button>
+            <div class="carousel-vertical-line"></div>
+          </div>
+          <!-- Carousel slide indicators -->
+          <ul class="carousel-indicators position-absolute mx-5">
+            <li
+              data-bs-target="#vertical-carousel"
+              data-bs-slide-to="0"
+              class="active"
+            >
+              <span>01</span>
+            </li>
+            <li data-bs-target="#vertical-carousel" data-bs-slide-to="1">
+              <span>02</span>
+            </li>
+            <li data-bs-target="#vertical-carousel" data-bs-slide-to="2">
+              <span>03</span>
+            </li>
+            <li data-bs-target="#vertical-carousel" data-bs-slide-to="3">
+              <span>04</span>
+            </li>
+            <li data-bs-target="#vertical-carousel" data-bs-slide-to="4">
+              <span>05</span>
+            </li>
+          </ul>
+          <div class="carousel-inner">
+            <!-- Carousel item represents each slide -->
+            <div class="carousel-item active px-5">
+              <div
+                class="carousel-content d-flex position-absolute flex-column justify-content-center"
+              >
+                <p>Designed for utility</p>
+                <p class="text-big fw-bold text-uppercase">
+                  Navy Salt & Pepper
+                </p>
+                <a href="#" class="app-gear-button">
+                  <div class="app-divider"></div>
+                  <span class="app-gear">Gear UP</span>
+                  <i class="fas fa-chevron-right fa-sm mx-2"></i>
+                </a>
+              </div>
+              <img src="images/home-slider-slide-1.webp" class="h-100
+              app-slide-image position-absolute end-0"" />
+            </div>
+            <div class="carousel-item">
+              <div
+                class="carousel-content d-flex position-absolute flex-column justify-content-center"
+              >
+                <p>Designed for utility</p>
+                <p class="text-big fw-bold text-uppercase">
+                  Navy Salt & Pepper
+                </p>
+                <a href="#" class="app-gear-button">
+                  <div class="app-divider"></div>
+                  <span class="app-gear">Gear UP</span>
+                  <i class="fas fa-chevron-right fa-sm mx-2"></i>
+                </a>
+              </div>
+              <img src="images/home-slider-slide-2.webp" class="h-100
+              app-slide-image position-absolute end-0"" />
+            </div>
+            <div class="carousel-item">
+              <div
+                class="carousel-content d-flex position-absolute flex-column justify-content-center"
+              >
+                <p>Designed for utility</p>
+                <p class="text-big fw-bold text-uppercase">
+                  Navy Salt & Pepper
+                </p>
+                <a href="#" class="app-gear-button">
+                  <div class="app-divider"></div>
+                  <span class="app-gear">Gear UP</span>
+                  <i class="fas fa-chevron-right fa-sm mx-2"></i>
+                </a>
+              </div>
+              <img src="images/home-slider-slide-3.png" class="h-100
+              app-slide-image position-absolute end-0"" />
+            </div>
+            <div class="carousel-item">
+              <div
+                class="carousel-content d-flex position-absolute flex-column justify-content-center"
+              >
+                <p>Designed for utility</p>
+                <p class="text-big fw-bold text-uppercase">
+                  Navy Salt & Pepper
+                </p>
+                <a href="#" class="app-gear-button">
+                  <div class="app-divider"></div>
+                  <span class="app-gear">Gear UP</span>
+                  <i class="fas fa-chevron-right fa-sm mx-2"></i>
+                </a>
+              </div>
+              <img src="images/home-slider-slide-4.webp" class="h-100
+              app-slide-image position-absolute end-0"" />
+            </div>
+            <div class="carousel-item">
+              <div
+                class="carousel-content d-flex position-absolute flex-column justify-content-center"
+              >
+                <p>Designed for utility</p>
+                <p class="text-big fw-bold text-uppercase">
+                  Navy Salt & Pepper
+                </p>
+                <a href="#" class="app-gear-button">
+                  <div class="app-divider"></div>
+                  <span class="app-gear">Gear UP</span>
+                  <i class="fas fa-chevron-right fa-sm mx-2"></i>
+                </a>
+              </div>
+              <img src="images/home-slider-slide-5.jpeg" class="h-100
+              app-slide-image position-absolute end-0"" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION 1 -->
+    <section>
+      <p>SECTION 1</p>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section>
+      <p>SECTION 2</p>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section>
+      <p>SECTION 3</p>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section>
+      <p>SECTION 4</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="px-5 py-2 w-100 row m-0">
+        <!-- LOGO -->
+        <div class="col-2 my-4">
+          <img src="images/tanner_logo.png" class="app-logo" />
+        </div>
+        <ul class="col my-4 nav app-navbar justify-content-between">
+          <li><a href="">FINDA</a></li>
+          <li><a href="">STORE</a></li>
+          <li><a href="">SIZING</a></li>
+          <li><a href="">CARE</a></li>
+          <li><a href="">WATCH</a></li>
+        </ul>
+        <!-- ADDRESS -->
+        <div class="col-2 my-4">
+          <span class="text-sm"
+            ><b>Sebazzo Ltd, Unit 3F2</b><br />
+            Zetland House<br />
+            5-25 Scrutton Street<br />
+            London EC2A 4HJ</span
+          >
+        </div>
+        <!-- EMAIL FORM -->
+        <div class="my-4 col-2 mail-box">
+          <p class="text-uppercase fw-bold text-md">Email Newsletters <br /></p>
+          <p class="text-sm">
+            Sign up for new TANNER GOODS content, updates, surveys & offers.
+          </p>
+          <div class="d-flex mt-3">
+            <input type="text" class="form-control" />
+            <button class="btn btn-dark mx-2 w-25">
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex align-items-center pb-5 px-5">
+        <span class="text-sm text-uppercase"
+          >© tanner goods portland ore 2016</span
+        >
+        <div class="mx-5">
+          <ul class="mx-5 nav app-navbar-social">
+            <li><a href="https://facebook.com" target="_blank">facebook</a></li>
+            <li>
+              <a href="https://www.pinterest.com/" target="_blank">pinterest</a>
+            </li>
+            <li><a href="https://twitter.com/" target="_blank">twitter</a></li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,358 @@
+:root {
+    /* COLORS */
+    --primary: #b8a47e;
+    --dark: #383838;
+    --light: #efefef --white: #ffffff;
+    --footer: #ededed;
+    --footer-text: #919191;
+    /* TYPOGRAPHY  */
+    --typo-sx: 10px;
+    --typo-sm: 12px;
+    --typo-md: 14px;
+    --typo-xl: 16px;
+    --typo-xxl: 18px;
+    --typo-big: 54px;
+    --header: 80px;
+    --banner: 600px;
+}
+
+/* COMMONS */
+
+body {
+    font-family: 'Montserrat';
+}
+
+.app-bg-primary {
+    background: var(--primary);
+}
+
+.app-bg-dark {
+    background: var(--dark);
+}
+
+.app-bg-secondary {
+    background: var(--light);
+}
+
+.text-sx {
+    font-size: var(--typo-xs);
+}
+
+.text-sm {
+    font-size: var(--typo-sm);
+}
+
+.text-md {
+    font-size: var(--typo-md);
+}
+
+.text-xl {
+    font-size: var(--typo-xl);
+}
+
+.text-xxl {
+    font-size: var(--typo-xxl);
+}
+
+.text-big {
+    font-size: var(--typo-big);
+}
+
+/* HEADER */
+
+header {
+    height: var(--banner);
+}
+
+header .app-logo {
+    height: var(--header);
+    width: auto;
+    object-fit: contain;
+}
+
+/* header navbar */
+
+header .app-navbar {
+    margin-left: 10rem !important;
+}
+
+header .app-navbar li a {
+    font-weight: bold;
+    font-size: var(--typo-md);
+    color: white;
+    margin-right: 6vw;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .app-navbar li:nth-child(-n+2) a {
+    color: black;
+}
+
+header .app-navbar li a:hover {
+    position: relative;
+    color: black;
+}
+
+header .app-navbar li a:hover::after {
+    content: "\2022";
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 1.2em;
+    color: var(--primary);
+}
+
+header .app-navbar li a:hover::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    bottom: 7px;
+    font-size: 1.2em;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.app-navigation {
+    z-index: 999;
+    height: var(--header);
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+.carousel-content {
+    background-color: transparent;
+    height: var(--banner);
+    z-index: 1;
+    margin-left: 15rem;
+}
+
+.app-slide-image {
+    width: 60%;
+}
+
+.carousel-inner,
+.carousel,
+.carousel-item,
+.carousel-container {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start {
+    transform: translate3d(0, -100%, 0);
+    -webkit-transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+}
+
+.carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+}
+
+.carousel-indicators {
+    display: inline;
+    bottom: initial;
+    top: calc(10rem + var(--header));
+    width: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+    margin: 10px 0;
+    text-indent: 0;
+    height: 20px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    left: 0;
+    font-size: var(--typo-sm);
+}
+
+.carousel-indicators li.active {
+    background: white;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    left: -10px;
+    position: relative;
+    box-shadow: 10px 10px 35px -16px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 10px 10px 35px -16px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 10px 10px 35px -16px rgba(0, 0, 0, 1);
+}
+
+.carousel-indicators li.active span {
+    font-size: var(--typo-xxl);
+    top: 12px
+}
+
+.carousel-indicators span {
+    position: relative;
+    top: 8px;
+}
+
+.carousel-vertical-line {
+    position: relative;
+    left: 15px;
+    top: 20px;
+    width: 1px;
+    height: 30px;
+    background-color: black;
+}
+
+.carousel-button-container {
+    margin-top: calc(var(--header) + 2rem);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    border: none;
+    color: var(--dark);
+    background: transparent;
+}
+
+.carousel-control-next-icon {
+    top: 0.5rem;
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:focus,
+.carousel-control-prev-icon:focus {
+    color: black;
+}
+
+.app-gear-button {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    margin-left: 7rem;
+}
+
+.app-gear-button span {
+    color: var(--primary);
+}
+
+.app-gear-button i {
+    color: var(--primary);
+}
+
+.app-gear-button .app-divider {
+    width: 50px;
+    margin-right: 10px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+/* SECTION 1 */
+/* SECTION 2 */
+/* SECTION 3 */
+/* SECTION 4 */
+
+/* FOOTER CSS */
+footer {
+    background-color: var(--footer);
+}
+
+footer .app-logo {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Footer navbar */
+footer .app-navbar li a {
+    font-weight: bold;
+    color: var(--footer-text);
+    font-size: var(--typo-md);
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+footer .app-navbar li a:hover {
+    position: relative;
+    color: black;
+}
+
+footer .app-navbar li a:hover::after {
+    content: "\2022";
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 1.2em;
+    color: var(--primary);
+}
+
+footer .app-navbar li a:hover::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    bottom: 7px;
+    font-size: 1.2em;
+    width: 30px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.mail-box {
+    width: 300px;
+}
+
+
+/* Footer socials navbar */
+footer .app-navbar-social li a {
+    color: var(--footer-text);
+    margin-right: 80px;
+    font-size: var(--typo-md);
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+
+footer .app-navbar-social li a:hover {
+    font-weight: bold;
+    position: relative;
+    color: black;
+}
+
+footer .app-navbar-social li a:hover::after {
+    content: "\2022";
+    position: absolute;
+    top: -3px;
+    right: -10px;
+    font-size: 1.2em;
+    color: var(--primary);
+}
+
+footer .app-navbar-social li a:hover::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    bottom: 7px;
+    font-size: 1.2em;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+@media screen and (min-width: 1441px) {
+    .app-slide-image {
+        width: 67%;
+    }
+}
